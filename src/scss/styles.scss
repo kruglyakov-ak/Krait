@@ -1,2 +1,8 @@
+@import "./fonts.scss";
 @import "./bootstrap-overwrite.scss";
 @import "~bootstrap/scss/bootstrap.scss";
+@import "header.scss";
+
+.main-container {
+  padding: 0 10px;
+}

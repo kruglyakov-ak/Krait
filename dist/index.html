@@ -8,11 +8,39 @@
   <link rel="stylesheet" href="./main.css">
 </head>
 
-<body>
-  <div class="container py-4 px-3 mx-auto">
-    <h1>Hello, Bootstrap and Webpack!</h1>
-    <button class="btn btn-primary">Primary button</button>
-  </div>
+<body class="container main-container">
+  <header class="header">
+    <div class="header-top-wrap">
+
+      <div class="header-select-wrap">
+        <select class="form-select form-select-sm header-city-select" aria-label=" Выбор города">
+          <option selected>Санкт-Петербург</option>
+          <option value="">Москва</option>
+        </select>
+      </div>
+
+      <div class="header-phone-wrap">
+        <a href="tel:88007852535" class="text-decoration-none">8 800 785-25-35</a>
+      </div>
+
+      <a href="#" class="header-logo-link">
+        <img src="/images/logo.svg" class="img-fluid header-logo" alt="Goldy Store" width="183px" height="52px" />
+      </a>
+
+      <div class="user-menu">
+        <a href="#" class="text-decoration-none user-menu-link">Вход</a>
+        <a href="#" class="text-decoration-none user-menu-link">Регистрация</a>
+      </div>
+
+      <div class="header-buttons-wrap">
+        <button type="button" class="btn btn-secondary header-button favorite-button" aria-label="Избранное" data-count="24"></button>
+        <button type="button" class="btn btn-secondary header-button chart-button" aria-label="Топ товаров"></button>
+        <button type="button" class="btn btn-secondary header-button bag-button" aria-label="Корзина"></button>
+      </div>
+    </div>
+  </header>
+
+
   <script src="./main.js"></script>
 </body>
 
