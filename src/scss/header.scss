@@ -1,5 +1,5 @@
 .header {
-  padding-top: 17px;
+  padding-top: 23px;
   font-size: $font-size-sm;
   & .navbar {
     padding: 0;
@@ -14,6 +14,7 @@
 
     & .navbar-collapse {
       width: 100%;
+      flex-direction: column;
 
       & .header-top-wrap {
         width: 100%;
@@ -21,7 +22,7 @@
 
         & .header-select-wrap {
           position: relative;
-          margin-top: 16px;
+          margin-top: 15px;
           margin-right: 3%;
           padding-left: 0;
 
@@ -61,18 +62,11 @@
 
         & .header-phone-wrap {
           position: relative;
-          margin-top: 18px;
+          margin-top: 16px;
           margin-right: calc(15% + 3px);
 
           & a {
             padding-left: 26px;
-
-            &:hover,
-            &:focus {
-              &::after {
-                opacity: 0.5;
-              }
-            }
           }
 
           &::after {
@@ -84,6 +78,13 @@
             height: 16px;
             background-image: url("../../dist/images/icons/phone.svg");
             background-repeat: no-repeat;
+          }
+
+          &:hover,
+          &:focus {
+            &::after {
+              opacity: 0.5;
+            }
           }
 
           @media (max-width: $container-max-widths-xxxl) {
@@ -108,7 +109,7 @@
         }
 
         & .user-menu {
-          margin-top: 16px;
+          margin-top: 15px;
           margin-right: calc(5% + 4px);
           display: flex;
           align-items: center;
@@ -147,9 +148,9 @@
         & .header-buttons-wrap {
           display: flex;
           align-items: center;
+          margin-top: 14px;
 
           & .header-button {
-            margin-top: 16px;
             border-radius: 0;
             width: 32px;
             height: 32px;
@@ -218,6 +219,79 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+        }
+
+        @media (max-width: 992px) {
+          align-items: flex-start;
+        }
+      }
+
+      & .header-bottom-wrap {
+        width: 100%;
+        height: 62px;
+        background-color: #f8f8f8;
+        margin-top: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px;
+
+        & .nav-link.active {
+          opacity: 0.5;
+        }
+        & .nav-link {
+          color: $primary;
+          padding: 0;
+        }
+
+        & .navbar-nav {
+          font-size: 13px;
+          font-weight: 500;
+          text-transform: uppercase;
+
+          & .nav-item {
+            &:not(:last-child) {
+              padding-right: 60.5px;
+            }
+          }
+        }
+
+        & .search-form {
+          margin-right: 6px;
+          position: relative;
+
+          &::before {
+            content: "";
+            width: 1px;
+            height: 62px;
+            background-color: #f0f0f0;
+            position: absolute;
+            top: -20px;
+            left: -56px;
+          }
+
+          &::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-image: url("../../dist/images/icons/search.svg");
+            position: absolute;
+            top: 0;
+            left: -32px;
+          }
+
+          & .form-control {
+            background-color: #f8f8f8;
+            border: none;
+            font-weight: 400;
+            font-size: 14px;
+
+            &::placeholder {
+              color: #a2a2a2;
+            }
+
+
+          }
         }
       }
     }
