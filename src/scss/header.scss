@@ -40,6 +40,13 @@
           opacity: 0.5;
         }
       }
+
+      @media (max-width: $container-max-widths-xxxl) {
+        margin-right: 0;
+      }
+      @media (max-width: $container-max-widths-lg) {
+        order: 2;
+      }
     }
 
     & .header-phone-wrap {
@@ -68,6 +75,13 @@
         background-image: url("../../dist/images/icons/phone.svg");
         background-repeat: no-repeat;
       }
+
+      @media (max-width: $container-max-widths-xxxl) {
+        margin-right: 0;
+      }
+      @media (max-width: $container-max-widths-lg) {
+        order: 3;
+      }
     }
 
     & .header-logo-link {
@@ -76,6 +90,13 @@
       & .header-logo {
         margin-left: 1px;
         margin-bottom: 4px;
+      }
+
+      @media (max-width: $container-max-widths-xxxl) {
+        margin-right: 0;
+      }
+      @media (max-width: $container-max-widths-lg) {
+        order: 1;
       }
     }
 
@@ -110,6 +131,13 @@
           padding-left: 10px;
         }
       }
+
+      @media (max-width: $container-max-widths-xxxl) {
+        margin-right: 0;
+      }
+      @media (max-width: $container-max-widths-lg) {
+        order: 4;
+      }
     }
 
     & .header-buttons-wrap {
@@ -129,6 +157,16 @@
 
         &:not(:last-child) {
           margin-right: 25%;
+
+          @media (max-width: $container-max-widths-xxxl) {
+            margin-right: 15px;
+          }
+        }
+
+        @media (max-width: $container-max-widths-xxxl) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
         }
 
         &:hover,
@@ -151,7 +189,7 @@
           height: 19px;
           top: -1px;
           right: -12px;
-          background-color: #E46942;
+          background-color: #e46942;
           border-radius: 50%;
           font-size: 10px;
           font-weight: 700;
@@ -166,6 +204,22 @@
       & .bag-button {
         background-image: url("../../dist/images/icons/bag.svg");
       }
+
+      @media (max-width: $container-max-widths-xxxl) {
+        margin-right: 0;
+      }
+      @media (max-width: $container-max-widths-lg) {
+        order: 5;
+      }
+    }
+
+    @media (max-width: $container-max-widths-xxxl) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @media (max-width: $container-max-widths-lg) {
+      flex-direction: column;
     }
   }
 }
