@@ -10,34 +10,50 @@
 
 <body class="container main-container">
   <header class="header">
-    <div class="header-top-wrap">
+    <nav class="navbar navbar-expand-lg">
 
-      <div class="header-select-wrap">
-        <select class="form-select form-select-sm header-city-select" aria-label=" Выбор города">
-          <option selected>Санкт-Петербург</option>
-          <option value="">Москва</option>
-        </select>
-      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <div class="header-phone-wrap">
-        <a href="tel:88007852535" class="text-decoration-none">8 800 785-25-35</a>
-      </div>
-
-      <a href="#" class="header-logo-link">
-        <img src="/images/logo.svg" class="img-fluid header-logo" alt="Goldy Store" width="183px" height="52px" />
+      <a href="#" class="navbar-brand">
+        <img src="/images/logo.svg" class="img-fluid" alt="Goldy Store" width="183px" height="52px" />
       </a>
 
-      <div class="user-menu">
-        <a href="#" class="text-decoration-none user-menu-link">Вход</a>
-        <a href="#" class="text-decoration-none user-menu-link">Регистрация</a>
-      </div>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="navbar-nav header-top-wrap">
 
-      <div class="header-buttons-wrap">
-        <button type="button" class="btn btn-secondary header-button favorite-button" aria-label="Избранное" data-count="24"></button>
-        <button type="button" class="btn btn-secondary header-button chart-button" aria-label="Топ товаров"></button>
-        <button type="button" class="btn btn-secondary header-button bag-button" aria-label="Корзина"></button>
+          <div class="header-select-wrap nav-item">
+            <select class="form-select form-select-sm header-city-select" aria-label=" Выбор города">
+              <option selected>Санкт-Петербург</option>
+              <option value="">Москва</option>
+            </select>
+          </div>
+
+          <div class="header-phone-wrap nav-item">
+            <a href="tel:88007852535" class="text-decoration-none">8 800 785-25-35</a>
+          </div>
+
+          <a href="#" class="header-logo-link nav-item">
+            <img src="/images/logo.svg" class="img-fluid header-logo" alt="Goldy Store" width="183px" height="52px" />
+          </a>
+
+          <div class="user-menu nav-item">
+            <a href="#" class="text-decoration-none user-menu-link">Вход</a>
+            <a href="#" class="text-decoration-none user-menu-link">Регистрация</a>
+          </div>
+
+          <div class="header-buttons-wrap nav-item">
+            <button type="button" class="btn btn-secondary header-button favorite-button" aria-label="Избранное"
+              data-count="23"></button>
+            <button type="button" class="btn btn-secondary header-button chart-button"
+              aria-label="Топ товаров"></button>
+            <button type="button" class="btn btn-secondary header-button bag-button" aria-label="Корзина"></button>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
 
 
