@@ -85,6 +85,15 @@
           align-items: center;
           width: 200px;
           height: 54px;
+
+          &:hover,
+          &:focus {
+            background-color: #505050;
+          }
+
+          &:active {
+            background-color: #000;
+          }
         }
       }
     }
