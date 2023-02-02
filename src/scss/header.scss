@@ -176,7 +176,7 @@
 
             &:hover,
             &:focus {
-              background-color: #f8f8f8;
+              background-color: $bg-gray-color;
             }
 
             &:active {
@@ -229,7 +229,7 @@
       & .header-bottom-wrap {
         width: 100%;
         height: 62px;
-        background-color: #f8f8f8;
+        background-color: $bg-gray-color;
         margin-top: 18px;
         display: flex;
         align-items: center;
@@ -332,7 +332,7 @@
           }
 
           & .form-control {
-            background-color: #f8f8f8;
+            background-color: $bg-gray-color;
             border: none;
             font-weight: 400;
             font-size: 14px;
