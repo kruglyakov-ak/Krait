@@ -11,13 +11,13 @@
       background-position: -111px 24px;
       height: 560px;
 
-      @media (max-width: 992px) {
+      @media (max-width: $grid-breakpoints-lg) {
         background-image: none;
         height: fit-content;
       }
 
       &.active {
-        @media (max-width: 992px) {
+        @media (max-width: $grid-breakpoints-lg) {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -29,7 +29,7 @@
         top: 12px;
         right: 36px;
 
-        @media (max-width: 992px) {
+        @media (max-width: $grid-breakpoints-lg) {
           position: static;
         }
       }
@@ -45,14 +45,14 @@
         width: fit-content;
         height: fit-content;
 
-        @media (max-width: 992px) {
+        @media (max-width: $grid-breakpoints-lg) {
           position: static;
           padding: 10px 20px 50px;
         }
 
         & .carousel-caption-title {
           margin-bottom: 41px;
-          @media (max-width: 992px) {
+          @media (max-width: $grid-breakpoints-lg) {
             margin-bottom: 20px;
           }
 
@@ -63,7 +63,7 @@
             line-height: 75px;
             padding-top: 17px;
 
-            @media (max-width: 992px) {
+            @media (max-width: $grid-breakpoints-lg) {
               display: inline;
               font-size: inherit;
               line-height: inherit;
@@ -118,7 +118,7 @@
     &.carousel-control-prev {
       left: -46px;
 
-      @media (max-width: 992px) {
+      @media (max-width: $grid-breakpoints-lg) {
         left: 0;
       }
       & .carousel-control-prev-icon {
@@ -139,7 +139,7 @@
 
     &.carousel-control-next {
       right: -47px;
-      @media (max-width: 992px) {
+      @media (max-width: $grid-breakpoints-lg) {
         right: 0;
       }
       & .carousel-control-next-icon {
