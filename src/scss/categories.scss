@@ -1,0 +1,106 @@
+.categories {
+  padding: 116px 0 0 0;
+
+  & h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 36px;
+  }
+
+  & .categories-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $grid-breakpoints-lg) {
+      overflow-y: auto;
+    }
+
+    & .categories-item {
+      width: 200px;
+      height: 259px;
+      text-decoration: none;
+      background-color: $bg-gray-color;
+      position: relative;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      margin-right: 2px;
+
+      @media (max-width: $grid-breakpoints-lg) {
+        justify-content: center;
+        width: fit-content;
+        padding: 0 10px;
+        height: 100px;
+
+        &:hover,
+        &:focus {
+          background-color: #dddddd;
+        }
+        &:not(:last-child) {
+          margin-right: 5px;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        & .img-fluid {
+          transform: scale(1.2);
+          transition: 0.2s;
+        }
+      }
+
+      & .img-fluid {
+        transition: 0.2s;
+
+        @media (max-width: $grid-breakpoints-lg) {
+          display: none;
+        }
+
+        &.one {
+          padding-bottom: 58px;
+        }
+        &.two {
+          padding-bottom: 43px;
+        }
+        &.three {
+          padding-bottom: 53px;
+        }
+        &.four {
+          padding-bottom: 49px;
+        }
+        &.five {
+          padding-bottom: 44px;
+          padding-left: 2px;
+        }
+        &.six {
+          padding-bottom: 35px;
+          padding-left: 10px;
+        }
+      }
+
+      & .categories-item-title {
+        font-family: $font-family-base;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        margin: 0;
+        padding-bottom: 24px;
+
+        @media (max-width: $grid-breakpoints-lg) {
+          padding-bottom: 0;
+        }
+
+        &.multiline {
+          padding-bottom: 17px;
+
+          @media (max-width: $grid-breakpoints-lg) {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
